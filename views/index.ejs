@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index pt-5">
+
+  <div class="container border border-1 p-0" >
+    <div class="card-header text-center">
+      <h4> Movies Form</h4>
+    </div>
+    <div class="row p-5">
+      <form class="row g-3" action="/movieForm" method="post" enctype="multipart/form-data">
+        <div class="col-md-6">
+          <label for="movieName">Movie Name</label>
+          <input type="text" class="form-control" name="movieName" placeholder="Enter Movie Name">
+        </div>
+        <div class="col-md-6">
+          <label for="price">Ticket Price</label>
+          <input type="number" class="form-control" name="price" placeholder="Enter price">
+        </div>
+        <div class="col-12">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" placeholder="Enter description">
+        </div>
+        <div class="col-12">
+          <label for="catagory">Type</label>
+          <input type="text" class="form-control" name="type" placeholder="Enter Type">
+        </div>
+        <div class="col-md-6">
+          <label for="catagory">Rating</label>
+          <input type="text" class="form-control" name="rating" placeholder="Enter Rating">
+        </div>
+        <div class="col-md-6">
+          <label for="catagory">Image</label>
+          <input type="file" class="form-control" name="movieImg" placeholder="Image">
+        </div>
+        <div class="col-12 py-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary"><a href="/views" class="text-white">Movies Card</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
